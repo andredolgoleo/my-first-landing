@@ -1,0 +1,501 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #969696;
+    --header-bottom-color: #0F0F0F;
+    --text-font-family: Playfair Display;
+    --text-font-family2: PT Sans;
+}
+
+
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 100%;
+}
+
+p,
+ul,
+li,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+
+}
+
+.header {
+    min-width: 100%;
+    max-height: 124px;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container__header__top {
+    display: block;
+    width: 100%;
+    max-width: 1150px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: inline-block;
+    width: 100%;
+    min-height: 44px;
+    color: var(--text-color);
+    line-height: 2.8;
+    font-size: small;
+}
+
+.phone::before {
+    display: inline-block;
+    content: url(../img/phone-icon.png);
+    width: 13.36px;
+    height: 13.33px;
+    margin-right: 15px;
+}
+
+p {
+    display: inline-block;
+}
+
+.some_content::after {
+    content: '|';
+    padding: 1rem;
+}
+
+.right::before {
+    margin: 5px;
+
+    content: url(../img/sign-up.png);
+}
+
+.right {
+    float: right;
+}
+
+.container__header__bottom {
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    color: white;
+    font-family: var(--text-font-family2);
+    font-size: 14px;
+    background-color: var(--header-bottom-color);
+}
+
+.header__bottom {
+    display: block;
+    width: 1150px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.logo {
+    padding-top: 13px;
+}
+
+nav {
+    display: block;
+    float: right;
+}
+
+li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 80px;
+}
+
+li:hover {
+    background-color: #1F1F1F;
+}
+
+.navbar {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container__second__logo {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+
+
+.wrapper__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.under__sesson {
+    position: absolute;
+    z-index: 9999;
+    width: 120px;
+    margin-left: 23.4%;
+    margin-top: 7%;
+}
+
+.for__text, .under__watches{
+    margin-top: 1.5rem;
+    font-weight: 100;
+}
+
+.container__catalog > h2 {
+    display: block;
+    font-size: 36px;
+    width: 376px;
+    height: 39px;
+    z-index: 9999;
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: 17%;
+    margin-top: 3%;
+
+}
+
+.ing {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.under__logo {
+    margin-top: 7px;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--text-font-family2);
+}
+
+.wrapper_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    z-index: 99999;
+    border: 4px solid white;
+    margin-bottom: 10%;
+}
+
+.TEXT__LOGO {
+    font-size: 1em;
+}
+
+.text__under__logo {
+    display: block;
+    width: 30%;
+    height: 10%;
+    position: absolute;
+    z-index: 99999;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 20%;
+    font-family: var(--text-font-family2);
+}
+
+.container__catalog {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper__left__catalog {
+    width: 60%;
+    height: auto;
+}
+
+.left__catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.watches1, .watches2 {
+    margin-right: 50px;
+    color: white;
+}
+
+.wrapper__watches {
+    display: flex;
+    width: 260px;
+    height: 325px;
+    background-color: #191B1C;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.right__new__colection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background: url(../img/right-background.png) no-repeat;
+    margin: 0 auto;
+    color: white;
+    width: 40%;
+    height: 70vh;
+    float: right;
+    background-size: cover;
+}
+
+.coll {
+    font-weight: 100;
+    margin-top: 35%;
+}
+
+hr {
+    display: block;
+    width: 13vh;
+}
+
+.catalog__butt {
+    display: block;
+    border: 1px solid white;
+    font-size: 1.1rem;
+    margin-top: 1.5em;
+    padding: .6rem 1.9em;
+    color: white;
+    text-decoration: none;
+    font-family: var(--text-font-family);
+}
+
+.container__collection2018 {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.right__photo2018 {
+    width: 100%;
+    
+}
+
+.wrapper__text2018 {
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+.left__collection2018 {
+    
+    width: 100%;
+    max-width: 1040px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-weight: 100;
+    padding: 7em;
+}
+
+.left__collection2018 > h2 {
+    margin-bottom: 3em;
+}
+
+.text__colection2018__bottom {
+    display: flex;
+    width: 25vw;
+    height: 10vh;
+    font-size: .8em;
+    justify-self: center;
+    align-self: center;
+    margin: 2.5em;
+    font-family: var(--text-font-family2);
+    
+}
+
+.watch__collection {
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    color: white;
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    margin-top: 3em;
+    font-family: var(--text-font-family2);
+}
+
+
+
+@media (max-width: 1250px) {
+    .container__header__top {
+        display: block;
+        width: 100%;
+        max-width: 900px;
+        height: 44px;
+        margin: 0 auto;
+    }
+
+    .header__top {
+        display: inline-block;
+        width: 100%;
+        min-height: 44px;
+        color: var(--text-color);
+        line-height: 2.8;
+        font-size: 11px;
+    }
+
+    .logo {
+        padding-top: 0;
+
+    }
+
+
+
+    .header__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 900px;
+        height: 80px;
+
+        font-size: 11px;
+    }
+
+    li {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container__header__top {
+        display: block;
+        width: 100%;
+        max-width: 650px;
+        height: 44px;
+        margin: 0 auto;
+    }
+
+    .header__top {
+        display: inline-block;
+        width: 100%;
+        min-height: 44px;
+        color: var(--text-color);
+        line-height: 2.8;
+        font-size: 11px;
+    }
+
+    .logo {
+        padding-top: 0;
+
+    }
+
+    .header__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 650px;
+        height: 80px;
+
+        font-size: 11px;
+    }
+
+    li {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 720px) {
+
+    body,
+    header,
+    main {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container__header__top {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+        height: 44px;
+        margin: 0 auto;
+    }
+
+    .header__top {
+        display: inline-block;
+        width: 100%;
+        min-height: 44px;
+        color: var(--text-color);
+        line-height: 2.8;
+        font-size: 8px;
+    }
+
+    .logo {
+        padding-top: 0;
+
+    }
+
+    .header__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 320px;
+        height: 80px;
+
+        font-size: 10px;
+    }
+
+    li {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 40px;
+    }
+}
